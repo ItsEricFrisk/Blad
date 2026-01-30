@@ -1,0 +1,32 @@
+body {
+    background-color: #fafafa;
+
+    color: black;
+    font-family: Arial, ui-serif;
+    font-size: 14px;
+    padding: 24px;
+
+    margin: 0;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code {
+    word-wrap: break-word;
+}
+
+p, div {
+    word-break: break-word;
+}

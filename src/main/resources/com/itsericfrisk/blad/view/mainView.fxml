@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.web.WebView?>
+<BorderPane fx:id="root" xmlns="http://javafx.com/javafx/21.0.6"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.itsericfrisk.blad.MainController">
+
+    <!-- Top section with MenuBar and ToolBar -->
+    <top>
+        <VBox>
+            <HBox styleClass="top-bar">
+                <MenuBar styleClass="menu-bar">
+                    <Menu text="File">
+                        <MenuItem text="Open File..." onAction="#openFile"/>
+                        <MenuItem text="Create File..." onAction="#createNewFile"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem text="Save" fx:id="saveFile" onAction="#save">
+                        </MenuItem>
+                        <MenuItem text="Save As..." fx:id="saveFileAs" onAction="#saveAs">
+                        </MenuItem>
+                    </Menu>
+                </MenuBar>
+
+                <Region HBox.hgrow="ALWAYS"/>
+
+                <ToggleButton fx:id="toggleViewButton" onAction="#toggleView"
+                              selected="true">
+                </ToggleButton>
+            </HBox>
+
+            <!-- Search bar-->
+            <HBox fx:id="searchBar" styleClass="search-bar" visible="false" managed="false">
+                <TextField fx:id="searchField" styleClass="search-field" promptText="Search..." HBox.hgrow="ALWAYS"/>
+                <HBox styleClass="search-button-field">
+                    <Button styleClass="search-buttons" text="↑" onAction="#findPrevious"/>
+                    <Button styleClass="search-buttons" text="↓" onAction="#findNext"/>
+                    <Button styleClass="search-buttons" text="×" onAction="#closeSearch"/>
+                </HBox>
+            </HBox>
+        </VBox>
+    </top>
+
+    <!-- Content area -->
+    <center>
+        <StackPane>
+
+            <TextArea fx:id="editorTextArea"
+                      wrapText="true"/>
+
+            <WebView fx:id="previewWebView" visible="false"/>
+
+        </StackPane>
+    </center>
+
+</BorderPane>

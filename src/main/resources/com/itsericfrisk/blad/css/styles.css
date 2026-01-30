@@ -1,0 +1,125 @@
+.root {
+    -fx-font-family: Arial;
+    -fx-font-size: 13px;
+    -fx-background-color: #fafafa;
+}
+
+.top-bar {
+    -fx-alignment: center-left;
+}
+
+.menu-bar {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.menu-bar .menu {
+    -fx-padding: 0 10 0 10;
+}
+
+.menu-bar .menu .label {
+    -fx-font-size: 13px;
+    -fx-font-weight: 400;
+    -fx-text-fill: #333333;
+}
+
+.menu-bar .menu:hover {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.menu-bar .menu:showing {
+    -fx-background-color: transparent;
+}
+
+.menu-item {
+    -fx-padding: 6 18 6 18;
+}
+
+.menu-item .label {
+    -fx-text-fill: #222222;
+}
+
+.menu-item:focused {
+    -fx-background-color: #eeeeee;
+    -fx-cursor: hand;
+}
+
+.toggle-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 8;
+}
+
+.toggle-button:hover {
+    -fx-cursor: hand;
+}
+
+.search-bar {
+    -fx-padding: 0 4;
+    -fx-spacing: 5;
+    -fx-alignment: center;
+}
+
+.search-field {
+    -fx-margin-right: 5;
+    -fx-focus-color: #bdbdbd;
+    -fx-faint-focus-color: transparent;
+}
+
+.search-button-field {
+    -fx-spacing: 2;
+    -fx-alignment: center;
+}
+
+.search-buttons {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-font-weight: 700;
+    -fx-font-size: 12;
+}
+
+
+.text-area {
+    -fx-font-size: 15px;
+    -fx-line-spacing: 2px;
+    -fx-text-fill: #1f1f1f;
+}
+
+.text-area,
+.text-area .scroll-pane,
+.text-area .scroll-pane .viewport {
+    -fx-border-color: transparent;
+    -fx-background-color: #fafafa;
+}
+
+.text-area .content {
+    -fx-background-color: #fafafa;
+}
+
+.text-area .caret {
+    -fx-stroke: #2b2b2b;
+}
+
+.context-menu {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-padding: 4 0 4 0;
+}
+
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(0, 0, 0, 0.12);
+}
+
+.scroll-bar:hover .thumb {
+    -fx-background-color: rgba(0, 0, 0, 0.22);
+}
